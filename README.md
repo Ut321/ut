@@ -1,4 +1,4 @@
-# ut
+# Switch Statements
 package com.Zone;
 
 import java.util.Scanner;
@@ -53,15 +53,9 @@ public class main {
             default:
                 System.out.println("Please Inter Number 0-12");
 
-
-        }
+    }
 
 
     }
 
     }
-
-
-
-
-
