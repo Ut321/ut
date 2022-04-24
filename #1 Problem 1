@@ -1,0 +1,52 @@
+
+ Make a menu driven program. The user can enter 2 numbers, either 1 or 0. 
+If the user enters 1 then keep taking input from the user for a student’s marks(out of 100). 
+If they enter 0 then stop.
+If he/ she scores :
+Marks >=90 -> print “This is Good”
+89 >= Marks >= 60 -> print “This is also Good”
+59 >= Marks >= 0 -> print “This is Good as well”
+	Because marks don’t matter but our effort does.
+package com.Zone;
+
+import java.util.Scanner;
+
+public class main {
+    private static int button;
+
+    public static void main(String[]args) {
+        System.out.println("Enter Number 0 or 1");
+       Scanner sc = new Scanner(System.in);
+       int Number = sc.nextInt();
+        /*for(int i=1; i<=10; i++){
+
+            System.out.println(n*i);*/
+     switch (Number){
+         case 0:
+             System.out.println("Stop");
+             break;
+         case 1:
+             System.out.println("Input Student Marks out of 100 :");
+             Scanner xy = new Scanner(System.in);
+             int Marks = xy.nextInt();
+             if(Marks >=90 ){
+                 System.out.println(" The Marks is Good !");
+             }else if(Marks <=89){
+                 System.out.println("This is also Good");
+             } else if (Marks <=59){
+                 System.out.println("This is Good as well");
+             }else {
+                 System.out.println("Good");
+             }
+             break;
+         case 3 : default:
+             System.out.println("Sorry !! Enter o or 1 . ");
+             break;
+
+
+
+    }
+
+    }
+
+}
